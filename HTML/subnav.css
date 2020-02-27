@@ -1,0 +1,9 @@
+<style>
+			.parent_list{position: relative;padding-bottom: 10px;}
+			.sublist_ul{position: absolute;padding-bottom:10px;width:auto;display: none;padding: 0;background-color: red;}
+			.sublist_li{float: none; ;display: inline-block;font-size:15px;font-family: monospace;
+		  width:100px ;text-align: left;}	
+	
+		     	
+
+		     </style>

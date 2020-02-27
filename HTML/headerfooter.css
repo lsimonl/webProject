@@ -1,0 +1,11 @@
+<style type="text/css">
+
+body{background-color: white;margin: 0px;padding: 0;}
+			header{background: white;padding: 0;margin: 0; position: relative ;top:-15px}
+			li{display: inline-block;;
+			padding-right: 30px;margin: 0;font-family: "arial black";}
+			.logo{width: 240px;height: 60px;}
+			a{text-decoration: none;color: black;}
+			a:hover{background:lightgray;color: red;}
+			footer ul{margin-top: 320px;text-align: center;}
+			</style>

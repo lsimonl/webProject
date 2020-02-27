@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>金鹏俱乐部</title>
+		<link rel="stylesheet" type="text/css" href="webstyle.css"/>
+		<link href="subnav.css" type="text/css"/>
+		<script type="text/javascript" src="show-sub-nav.js"></script> 
+	
+		<style>
+		main div {width: auto;height: 100%;;margin-right: 25px;;}
+		div img{margin-right: 20px;}
+		.scroll_div {width:70%; height:146px; margin:0 auto; overflow: hidden; white-space: nowrap;background:#ffffff;}
+		.scroll_div img {width:200px;height:140px;border: 0;margin: auto 2px;border:1px #efefef solid;}	
+			#scroll_begin, #scroll_end, #scroll_begin ul, #scroll_end ul, #scroll_begin ul li, #scroll_end ul li {
+		display:inline;}/*设置ul和li横排*/
+		table{height:330px;text-align:center;}
+		table td img{float: right;margin-bottom: 3px;margin-right: 5px;;}
+		 section div{;font-family: "微软雅黑";font-size: 15px; height: 320px;overflow: scroll;}
+		section table{;height: 100px;font-family:"微软雅黑";;}
+		#registlink{text-decoration: underline;}
+		
+	nav{width: 100%;;color: transparent;padding-top: 10px;}
+			.sublist_ul{position: absolute;;width:auto;display: none;padding: 0;background-color:lavender;border-radius: 20px;
+			margin-right: -30px;padding-top: 10px;}
+			.sublist_li{float: none; ;display: block;font-size:15px;font-family: monospace;
+		   ;text-align:;width: 100%;padding-bottom: 10px;;}	
+		    .parent_list{position:relative;padding-bottom: 10px;text-indent: 20px;;}
+			#nav1{text-indent: 20px;}
+		
+	   footer{background: url(https://www.hnair.com/image_new/footer-bg.png) no-repeat;}  
+		</style>
+	</head>
+	<body>
+	<header>
+			<nav>
+			<ul style="display: inline-block;">
+				<li class="logo"> <img src="http://www.hnair.com/./image_new/logo.png"></a></li>
+				
+				<li class="parent_list"; onmouseout="hidesubmenu(this)" onmouseover="displaysubmenu(this)"><a href="index.html">海南航空</a>
+					<ul class="sublist_ul">
+						<li class="sublist_li"><a href="#" >搜索机票</li>
+						<li class="sublist_li"><a href="#" >酒店预订</li>
+						<li class="sublist_li"><a href="#" >低价预约</li>
+						<li class="sublist_li"><a href="#" >套票预定</li>
+						<li class="sublist_li"><a href="#" >常见问题</li>
+					</ul>
+					
+				</li>
+
+				<li class="parent_list"; onmouseout="hidesubmenu(this)" onmouseover="displaysubmenu(this)"><a href="product.html">航班信息</a>
+					<ul class="sublist_ul">
+						<li class="sublist_li"><a href="#" >境内航班</li>
+						<li class="sublist_li"><a href="#" >港澳台国际航班</li>
+						<li class="sublist_li"><a href="#" >中转信息</li>
+						<li class="sublist_li"><a href="#" >行李指南</li>
+					</ul>
+					 
+				</li>
+				
+				
+				<li class="parent_list"; onmouseout="hidesubmenu(this)" onmouseover="displaysubmenu(this)"><a href="airplanetype.html">旅游度假</a>
+					<ul class="sublist_ul">
+						<li class="sublist_li" ><a href="#" >国内省心游</li>
+						<li class="sublist_li"><a href='#'>国外自由行</li>
+					</ul>
+		</li>
+		
+		
+		
+				<li class="parent_list"; onmouseout="hidesubmenu(this)" onmouseover="displaysubmenu(this)"><a href="address.html">金鹏俱乐部</a>
+					<ul class="sublist_ul">
+						<li class="sublist_li" ><a href="#" >金鹏简介</li>
+						<li class="sublist_li"><a href='#'>企业客户</li>
+						<li class="sublist_li"><a href="#" >贵宾服务</li>
+					</ul>
+				</li> 
+				<li class="parent_list"; onmouseout="hidesubmenu(this)" onmouseover="displaysubmenu(this)"><a href="#">联系我们</a>
+					<ul class="sublist_ul">
+						<li class="sublist_li" ><a href="#" >海航营业部</li>
+						<li class="sublist_li"><a href='#'>海航总部</li>
+					</ul>
+					
+				</li>
+					<li> <a href="account.html">会员注册</a>
+					
+					
+					
+				</li>
+				<input type="search"  ;"  value="请输入搜索的信息" />
+			</ul>
+			</nav>
+		</header>
+			
+		
+			
+	<script type="text/javascript">
+		function ScrollImgLeft(){
+			var speed=15
+			var scroll_begin = document.getElementById("scroll_begin");
+			var scroll_end = document.getElementById("scroll_end");      /*建立variable>*/
+			var scroll_div = document.getElementById("scroll_div");
+			scroll_end.innerHTML=scroll_begin.innerHTML                 /*滚动结束时等于开始时  */
+			function Marquee(){
+    				if(scroll_end.offsetWidth-scroll_div.scrollLeft<=0)   /*当结束时显示宽度小于左转总宽度
+    																			左转总宽度递减开始时显示宽度*/
+      				scroll_div.scrollLeft-=scroll_begin.offsetWidth
+   				 	else
+      				scroll_div.scrollLeft++
+										}
+			var MyMar=setInterval(Marquee,speed)
+				scroll_div.onmouseover=function() {clearInterval(MyMar)}                    /* 鼠标在上面停止，不在则继续运行*/
+				scroll_div.onmouseout=function() {MyMar=setInterval(Marquee,speed)}
+}
+</script>
+
+ <div id="scroll_div" class="scroll_div">
+      <div id="scroll_begin"> <ul>
+	   		<li><img src="https://ffp.hnair.com/FFPClub/cn/gbhy/gbdj/201809/P020180906581988518804.png"/></li>
+	   		<li><img src="https://ffp.hnair.com/FFPClub/cn/gbhy/gbdj/201809/P020180906582413040526.png" /></li>
+	   		<li><img src="https://ffp.hnair.com/FFPClub/cn/gbhy/gbdj/201809/P020180906582712572630.png" /></li>
+	   		<li><img src="https://ffp.hnair.com/FFPClub/rsc/images/vip/pic010.png"</li>
+	   		<li><img src="https://ffp.hnair.com/FFPClub/rsc/images/vip/pic011.png"</li>
+	   		   </ul>
+      
+      </div>
+      <div id="scroll_end"></div>
+    </div>
+    <!--#####滚动区域#####-->
+<script type="text/javascript">ScrollImgLeft();</script>
+<!--//向左滚动代码结束-->
+
+   <!--
+   	table vip info
+   -->
+    	
+    	<table   cellspacing="2" cellpadding="2" style="width: 70%;margin: auto;margin-top: 30px;">
+    		<tr style="background-color: lightgray;"><th>会员等级</th>
+    			<th>升级标准（连续12个月内）</th>
+    			<th>保级标准（贵宾资格有效期内）</th>
+    		</tr>
+    		<tr><td >白金卡
+    		<img  src="https://ffp.hnair.com/FFPClub/cn/gbhy/gbdj/201809/P020180906581988678428.png"</td>
+    			<td>10万定级积分或80个定级航段</td>
+    			<td>10万定级积分或80个定级航段</td>
+    		</tr>
+    		<tr><td>金卡 <img src="https://ffp.hnair.com/FFPClub/cn/gbhy/gbdj/201809/P020180906582413049288.png"   </td>
+    			<td>5万定级积分或40个定级航段</td>
+    			<td>5万定级积分或40个定级航段</td>
+    		</tr>
+    		<tr><td>银卡<img src="https://ffp.hnair.com/FFPClub/cn/gbhy/gbdj/201809/P020180906582712738569.png"</td>
+    			<td>3万定级积分或20个定级航段</td>
+    			<td>3万定级积分或20个定级航段</td>
+    		</tr>
+    	</table>
+    <section style="color: black;">
+    <div style="width: 70%;margin: auto;margin-top: 40px;"class="paragraph">
+    <p><h2 style="text-align: center;background-color: lightgray;height: 40px;;">金鹏俱乐部升保级规则</h2></p>
+    <p>1.会员的定级积分仅指会员搭乘海南航空、大新华航空、天津航空、香港航空、祥鹏航空、
+    	首都航空、福州航空、金鹏航空、北部湾航空、乌鲁木齐航空、阿拉斯加航空和维珍澳洲航空的航班，
+    	按航距和舱位等级计算的定级积分，不包括消费积分或其他任何促销奖励积分。 </p>
+    <p>2.金鹏贵宾卡（白金卡、金卡、银卡）的身份有效期以实物卡片注明为准，
+    	仅限贵宾会员本人在身份有效期内使用。
+    	若在升级后贵宾会员有效期内定级积分或定级航段未达到保级标准，则自动进行相应降级，
+    	直至恢复为金鹏卡身份。相关专享优惠与服务需贵宾会员出示本人有效贵宾卡，
+    	拒绝出示或未带贵宾卡均不能享受。系列机场专享服务仅限海航通航城市机场，并且需出示本人当日海航航班有效客票。 </p>
+    <p>3.金鹏俱乐部每日执行一次贵宾卡升级，以确认会员的贵宾会员资格</p>
+    	<p>4.在贵宾卡有效期内，会员积分账户中的定级积分或定级航段达到保级标准，即可获得下一阶段的贵宾会员资格，例如：白金卡会员，本次卡有效期为2015年7月-2016年8月。会员在卡有效期期间达到保级标准，可获得下一阶段贵宾会员资格，有效期2016年9月-2017年10月，卡号保持不变。、 </p>
+    <p>5.贵宾会员定级积分/航段滚动累积：在贵宾卡有效期内，会员积分账户中的定级积分或定级航段超出保级标准的部分，可以滚动计入下个保级计算周期。例如：金卡会员，本次卡有效期内累积50个定级航段（金卡保级标准为40个定级航段），保级成功。超出保级标准的10个定级航段计入下一个保级计算周期，下一周期再累积10个定级航段可保级银卡，再累积30个定级航段可保级金卡，再累积个70定级航段可升级白金卡。 </p>
+    </div>
+   </section>
+	   		
+	   <section style="margin-bottom: -250px;">
+	   	<table class="register" style="width: 70%;margin: auto; ;">
+	   		<caption><h2 style="background-color: lightgray;width: ;">欢迎加入海南航空常旅客计划</h2></caption>
+	   		<form action="login.php" method="post">
+	   		<tr ><td >请输入您的金鹏卡号</td><td><input type="text"  /></td></tr>
+	   		<tr><td>请输入密码</td><td><input type="password"  /></td></tr>
+	   		<tr><td><a id="registlink" href="account.html">还没有账号？</td><td><input type="submit" value="登录账号"  /></td></tr></form>
+			</table>
+	  </section>
+	  
+		<footer class="footer" onclick="footernotdeveloped()">
+			<ul>
+				<li><a href="##">网站地图</li>
+				<li><a href="##">常见问题</li>
+				<li><a href="##">隐私政策</li>
+					<li class="logo"> <img src="http://www.hnair.com/./image_new/logo.png"></a></li>
+				<li><a href="##">加入我们</li>
+				<li><a href="##">关于海航</li>
+				<li><a href="##">特殊旅客</li>
+			</ul>
+		</footer>
+		<script>
+			
+			function footernotdeveloped(){
+				alert('Sorry, footer has not been developed')
+			}
+			
+			
+		</script>
+	</body>
+</html>
+ 
